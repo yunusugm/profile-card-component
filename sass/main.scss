@@ -10,4 +10,125 @@
 body {
   font-family: "Kumbh Sans", sans-serif;
   height: 100vh;
+  background-color: $dark-cyan;
+  overflow: hidden;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  // &::before {
+  //   content: url(../images/bg-pattern-top.svg);
+  //   background-repeat: no-repeat;
+  //   background-size: cover;
+  //   position: absolute;
+  //   top: -30rem;
+  //   left: -25rem;
+  //   z-index: -1;
+  // }
+
+  // &::after {
+  //   content: url(../images/bg-pattern-bottom.svg);
+  //   background-repeat: no-repeat;
+  //   background-size: cover;
+  //   position: absolute;
+  //   bottom: -30rem;
+  //   right: -25rem;
+  //   z-index: -2;
+  // }
+}
+
+.wrapper {
+  position: relative;
+  overflow: hidden;
+  border-radius: 8px;
+}
+
+.pattern-card,
+.pattern-img {
+  width: 100%;
+  height: 100%;
+  display: block;
+}
+
+.content {
+  position: relative;
+  background: #ffffff;
+  padding: 3rem;
+  padding-bottom: 1.5rem;
+  text-align: center;
+}
+
+.image-box,
+.image {
+  box-sizing: content-box;
+  border: 4px solid #fff;
+  border-radius: 50%;
+  position: absolute;
+  top: 0;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.user {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 1.5rem;
+
+  &-name {
+    color: $very-dark-desaturated-blue;
+    font-size: 1.5rem;
+    margin-right: 0.5rem;
+  }
+
+  &-age {
+    color: $dark-gray;
+    font-size: 1.5rem;
+  }
+}
+
+.city {
+  color: $dark-gray;
+  margin: 0.5rem 0 1.5rem 0;
+}
+
+.social {
+  border-top: solid 1px rgba($dark-gray, 0.5);
+  padding-top: 1.5rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  & > * {
+    color: $very-dark-desaturated-blue;
+    text-transform: uppercase;
+  }
+
+  &-detail {
+    color: $dark-gray;
+    font-size: 0.7rem;
+    text-transform: capitalize;
+    letter-spacing: 2px;
+  }
+}
+
+.followers,
+.likes,
+.photos {
+  font-size: 1.3rem;
+}
+
+.attribution {
+  font-size: 11px;
+  text-align: center;
+  position: absolute;
+  bottom: 80px;
+
+  @media only screen and (max-width: 23.4375rem) {
+    bottom: 20px;
+  }
+}
+.attribution a {
+  color: hsl(228, 45%, 44%);
 }

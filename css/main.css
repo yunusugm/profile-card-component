@@ -9,5 +9,129 @@
 body {
   font-family: "Kumbh Sans", sans-serif;
   height: 100vh;
+  background-color: #19a2ae;
+  overflow: hidden;
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.wrapper {
+  position: relative;
+  overflow: hidden;
+  border-radius: 8px;
+}
+
+.pattern-card,
+.pattern-img {
+  width: 100%;
+  height: 100%;
+  display: block;
+}
+
+.content {
+  position: relative;
+  background: #ffffff;
+  padding: 3rem;
+  padding-bottom: 1.5rem;
+  text-align: center;
+}
+
+.image-box,
+.image {
+  -webkit-box-sizing: content-box;
+          box-sizing: content-box;
+  border: 4px solid #fff;
+  border-radius: 50%;
+  position: absolute;
+  top: 0;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+}
+
+.user {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin-top: 1.5rem;
+}
+
+.user-name {
+  color: #2d3248;
+  font-size: 1.5rem;
+  margin-right: 0.5rem;
+}
+
+.user-age {
+  color: #969696;
+  font-size: 1.5rem;
+}
+
+.city {
+  color: #969696;
+  margin: 0.5rem 0 1.5rem 0;
+}
+
+.social {
+  border-top: solid 1px rgba(150, 150, 150, 0.5);
+  padding-top: 1.5rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.social > * {
+  color: #2d3248;
+  text-transform: uppercase;
+}
+
+.social-detail {
+  color: #969696;
+  font-size: 0.7rem;
+  text-transform: capitalize;
+  letter-spacing: 2px;
+}
+
+.followers,
+.likes,
+.photos {
+  font-size: 1.3rem;
+}
+
+.attribution {
+  font-size: 11px;
+  text-align: center;
+  position: absolute;
+  bottom: 80px;
+}
+
+@media only screen and (max-width: 23.4375rem) {
+  .attribution {
+    bottom: 20px;
+  }
+}
+
+.attribution a {
+  color: #3e52a3;
 }
 /*# sourceMappingURL=main.css.map */
